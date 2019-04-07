@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A Brutal Simpsons Quiz</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link href="Simpsonfont.ttf">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+</head>
+<body>
+    <header role="banner">
+            <p class="hide" id="qTracker">
+                Question number <span id="qNumber">#</span> of <span id="totalQs">#</span>
+            </p>
+    </header>
+            
+    <main class="container" role="main">
+            <section class="frontPage" role="region">
+                <h3 class="brutal">A Brutal</h3>
+                <h1>Simpsons</h1>
+                <h2 class="quiz">Quiz</h2>
+                <button class="begin" href="#" alt="begin">Begin</button>
+            </section>
+
+            <section class="qPage hide" role="region">
+                <div class="picFrame">
+                    <img class="qPic" src="#">
+                </div>
+
+                <div class="qFrame" >
+                    <legend id="question">Blah Blah Blah?</legend>
+                    <form  action="">
+                            <div id="answersToQs">
+                               <input id="0" type="radio" name="question" value="zero">
+                               <label for="0">zero</label>
+                               <input id="1" type="radio" name="question" value="one">
+                               <label for="1">one</label>
+                               <input id="2" type="radio" name="question" value="two">
+                               <label for="2">two</label>
+                               <input id="3" type="radio" name="question" value="three">
+                               <label for="3">three</label>
+                            </div>
+                        <button type="submit" class="mySubmit">Answer</button>
+                        <button type="submit" class="myNextB">Next Question</button>
+                    </form>
+                </div>
+            </section>
+
+            <section id="summaryPage" class="hide" role="region">
+                <h2>Results</h2>
+                <p id="yourScore" alt="You scored x out of y questions correctly!">You scored <span id="x">X</span> out of <span id="y">Y</span> questions correctly!</p>
+                <button class = "playAgain" href="#" alt="play again">Play Again</button>
+            </section>
+        </main>
+
+    <footer role="contentinfo">
+        <p class="hide" id="correctTracker">
+            <span id="correctNumber">0</span>correct answer(s)
+        </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
